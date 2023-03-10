@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* { font-family: 'Poppins', sans-serif; }
+
+label{padding:0; padding-top: 6px;}
+
+.topo{ color:darkblue; margin:auto; text-align: center;}
+
+#corpo{ background-color:#fff; width: 400px; height: 220px; margin: auto;
+    text-align: center;}
+
+#title{ background-color:#163550; color: #fff; width: 400px; 
+    height: 40px; margin: auto; margin-bottom: 20px; text-align: center; padding-top: 8px; font-size: 16px;}
+
+#corpo2{ min-height: 600px; }
+
+.navbar-light .navbar-nav .nav-link {
+    color:#fff; padding-left: 15px; padding-top: 10px; font-size: 18px; margin-right: 20px;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #007bff;
+    }
+
+.navbar-collapse {
+    padding-top: 10px;
+}
+    
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    font-size: 16px;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/* Comandos para o Rodapé*/
+footer{ 
+    background-color: #0069d9; height: 50px; padding-top: 7px; padding-left: 20px; 
+    color: #fff; margin-top: 30px;
+}
+footer h4{
+    color: #fff; font-weight: bold;
+}
+    

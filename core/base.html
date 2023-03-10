@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang='pt-br'>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sistema de Gerenciamento Ocupacional</title>
+<link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="topo">
+        <h1>Sistema de Gerenciamento Ocupacional</h1>    
+    </div>
+     
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-left">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+                </li> 
+                <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Tabelas Básicas
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                        <a class="dropdown-item" href="#">Funções</a>
+                        <a class="dropdown-item" href="#">Setores</a>
+                        <a class="dropdown-item" href="#">Tipos de Riscos</a>
+                        <a class="dropdown-item" href="#">Riscos</a>
+                        <a class="dropdown-item" href="#">Exames</a>
+                        <a class="dropdown-item" href="#">Grupos Homogêneos</a>
+                    </div>
+                </li>
+            </ul>
+            
+    </nav>
+    {% block content %}
+    
+    {% endblock %}
+    <footer>
+        <h4>Todos os direitos reservados </h4>
+    </footer>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+</body>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+
+});
+  
+ 
+
+</script>
+
+</html>
